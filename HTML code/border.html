@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tailwind Border & Radius Study</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-center p-10 font-sans space-y-10">
+
+  <h1 class="text-2xl font-bold text-gray-800">🎨 Tailwind CSS Borders & Radius</h1>
+
+  <!-- 🔹 1. Border Width -->
+  <div class="space-y-2">
+    <div class="border-8 border-green-500">border (default: 1px)</div>
+    <div class="border-2 border-blue-500 p-4">border-2 (2px)</div>
+    <div class="border-4 border-green-500 p-4">border-4 (4px)</div>
+    <div class="border-8 border-red-500 p-4">border-8 (8px)</div>
+  </div>
+
+  <!-- 🔸 2. Border Color -->
+  <div class="space-y-2">
+    <div class="border border-blue-500 p-4">Blue Border</div>
+    <div class="border border-red-400 p-4">Red Border</div>
+    <div class="border border-green-600 p-4">Green Border</div>
+    <div class="border border-yellow-500 p-4">Yellow Border</div>
+  </div>
+
+  <!-- 🔸 3. Border Style -->
+  <div class="space-y-2">
+    <div class="border border-dashed border-blue-500 p-4">Dashed Border</div>
+    <div class="border border-dotted border-green-500 p-4">Dotted Border</div>
+    <div class="border border-double border-red-500 p-4">Double Border</div>
+  </div>
+
+  <!-- 🔸 4. Border Radius (`rounded`) -->
+  <div class="space-y-2">
+    <div class="border border-gray-400 rounded-sm p-4">rounded-sm (slight curve)</div>
+    <div class="border border-gray-400 rounded p-4">rounded (default)</div>
+    <div class="border border-gray-400 rounded-md p-4">rounded-md</div>
+    <div class="border border-gray-400 rounded-lg p-4">rounded-lg</div>
+    <div class="border border-gray-400 rounded-xl p-4">rounded-xl</div>
+    <div class="border border-gray-400 rounded-2xl p-4">rounded-2xl</div>
+    <div class="border border-gray-400 rounded-full p-4 w-32 h-32 mx-auto flex items-center justify-center">
+      rounded-full (circle)
+    </div>
+  </div>
+
+  <!-- 🔸 5. Custom Radius Corners -->
+  <div class="border border-purple-500 p-4 rounded-t-lg">🔝 Only Top Rounded</div>
+  <div class="border border-pink-500 p-4 rounded-b-xl">🔻 Only Bottom Rounded</div>
+
+  <!-- 🔹 6. Button with Border + Hover -->
+  <button class="border border-blue-600 text-blue-600 px-6 py-2 rounded-lg hover:bg-blue-600 hover:text-white transition">
+    Hover Border Button
+  </button>
+
+</body>
+</html>
