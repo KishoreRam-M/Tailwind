@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tailwind CSS Shadow Examples</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-10 font-sans text-center space-y-8">
+
+  <h1 class="text-2xl font-bold text-gray-800">🌫️ Tailwind CSS Shadow Utilities</h1>
+
+  <!-- 🔹 1. Basic Shadow Sizes -->
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+
+    <div class="shadow-sm bg-white p-4 rounded">shadow-sm</div>
+    <div class="shadow bg-white p-4 rounded">shadow (default)</div>
+    <div class="shadow-md bg-white p-4 rounded">shadow-md</div>
+    <div class="shadow-lg bg-white p-4 rounded">shadow-lg</div>
+    <div class="shadow-xl bg-white p-4 rounded">shadow-xl</div>
+    <div class="shadow-2xl bg-white p-4 rounded">shadow-2xl</div>
+
+  </div>
+
+  <!-- 🔸 2. Shadow with Hover -->
+  <button class="bg-blue-500 text-white px-6 py-3 rounded shadow-md hover:shadow-xl transition">
+    Hover Me ✨
+  </button>
+
+  <!-- 🔸 3. Shadow Inner -->
+  <div class="shadow-inner bg-white p-6 rounded w-60 mx-auto">
+    shadow-inner
+  </div>
+
+  <!-- 🔸 4. No Shadow -->
+  <div class="shadow-none bg-white p-4 rounded">
+    shadow-none (no shadow)
+  </div>
+
+</body>
+</html>
