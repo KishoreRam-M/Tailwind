@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Transformation Study</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts (Optional - For Better Look) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .box {
+      @apply p-4 bg-gray-800 text-white rounded-xl mb-4 shadow-lg;
+    }
+
+    .label {
+      @apply font-semibold text-yellow-300;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-black via-slate-900 to-gray-900 min-h-screen p-8 text-white">
+
+  <h1 class="text-4xl text-center font-bold text-indigo-400 mb-10 underline">🎓 Text Transformation Study</h1>
+
+  <div class="max-w-xl mx-auto space-y-6">
+
+    <!-- Uppercase -->
+    <div class="box">
+      <p class="label">Uppercase</p>
+      <p class="uppercase text-lg text-blue-300">this text will appear in uppercase</p>
+    </div>
+
+    <!-- Lowercase -->
+    <div class="box">
+      <p class="label">Lowercase</p>
+      <p class="lowercase text-lg text-green-300">THIS TEXT WILL APPEAR IN LOWERCASE</p>
+    </div>
+
+    <!-- Capitalize -->
+    <div class="box">
+      <p class="label">Capitalize</p>
+      <p class="capitalize text-lg text-pink-300">this text will appear capitalized</p>
+    </div>
+
+    <!-- Normal Case -->
+    <div class="box">
+      <p class="label">Normal (No Transformation)</p>
+      <p class="normal-case text-lg text-gray-300">This Stays As It Is</p>
+    </div>
+
+    <!-- Custom Inline CSS -->
+    <div class="box">
+      <p class="label">Inline CSS (text-transform: capitalize)</p>
+      <p style="text-transform: capitalize;" class="text-lg text-yellow-300">
+        learn css and html like a pro
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>
