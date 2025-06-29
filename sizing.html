@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tailwind CSS Master Study</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font (Optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .box {
+      @apply p-5 bg-gray-800 text-white rounded-xl shadow mb-6;
+    }
+
+    .label {
+      @apply font-semibold text-yellow-300 text-lg mb-1 block;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-black via-gray-900 to-gray-800 min-h-screen p-10 text-white">
+
+  <h1 class="text-4xl text-center font-extrabold text-indigo-400 underline mb-12">
+    🧠 Tailwind CSS Core Concepts Study Guide
+  </h1>
+
+  <div class="max-w-4xl mx-auto space-y-10">
+
+    <!-- 1️⃣ Text Transformations -->
+    <div class="box">
+      <span class="label">1️⃣ Text Transformations</span>
+      <p class="uppercase text-blue-300">this becomes uppercase</p>
+      <p class="lowercase text-green-300">THIS BECOMES LOWERCASE</p>
+      <p class="capitalize text-pink-300">this becomes capitalized</p>
+      <p class="normal-case text-gray-300">No change to this sentence</p>
+    </div>
+
+    <!-- 2️⃣ Font Size & Font Weight -->
+    <div class="box">
+      <span class="label">2️⃣ Font Size & Weight</span>
+      <p class="text-xs font-light text-purple-200">Extra Small (xs), Light</p>
+      <p class="text-sm font-normal text-purple-300">Small (sm), Normal</p>
+      <p class="text-base font-medium text-purple-400">Base, Medium</p>
+      <p class="text-lg font-semibold text-purple-500">Large (lg), Semi-Bold</p>
+      <p class="text-xl font-bold text-purple-600">Extra Large (xl), Bold</p>
+    </div>
+
+    <!-- 3️⃣ Spacing (Padding & Margin) -->
+    <div class="box">
+      <span class="label">3️⃣ Spacing (Padding & Margin)</span>
+      <div class="bg-gray-700 p-4 mb-4">p-4 → Padding inside box (16px)</div>
+      <div class="bg-gray-700 px-6 py-2 mb-4">px-6 py-2 → Horizontal 24px, Vertical 8px</div>
+      <div class="bg-gray-700 mt-6 mb-2">mt-6 → Top margin 24px<br>mb-2 → Bottom margin 8px</div>
+    </div>
+
+    <!-- 4️⃣ Width & Height -->
+    <div class="box">
+      <span class="label">4️⃣ Width & Height</span>
+      <div class="bg-blue-500 w-20 h-10 mb-3 text-center">w-20 h-10</div>
+      <div class="bg-blue-600 w-40 h-16 mb-3 text-center">w-40 h-16</div>
+      <div class="bg-blue-700 w-full h-12 text-center">w-full h-12 (100% width)</div>
+    </div>
+
+    <!-- 5️⃣ Border Radius & Shadow -->
+    <div class="box">
+      <span class="label">5️⃣ Border Radius & Shadow</span>
+      <div class="bg-pink-400 rounded-sm mb-3 p-2">rounded-sm (small curve)</div>
+      <div class="bg-pink-500 rounded-lg mb-3 p-2 shadow-md">rounded-lg + shadow-md</div>
+      <div class="bg-pink-600 rounded-full p-2 shadow-xl">rounded-full (pill shape)</div>
+    </div>
+
+    <!-- 6️⃣ Colors & Background -->
+    <div class="box">
+      <span class="label">6️⃣ Text & Background Colors</span>
+      <p class="text-red-400">Text: red-400</p>
+      <p class="text-green-300">Text: green-300</p>
+      <p class="bg-yellow-300 text-black p-2 mt-2 rounded">Background: yellow-300</p>
+      <p class="bg-gradient-to-r from-pink-500 via-yellow-500 to-green-500 text-black p-2 mt-2 rounded">
+        🌈 Gradient background
+      </p>
+    </div>
+
+    <!-- 7️⃣ Responsive Display -->
+    <div class="box">
+      <span class="label">7️⃣ Responsive Visibility (Resize screen!)</span>
+      <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-blue-200">
+        Resize the screen → Text gets bigger on breakpoints
+      </p>
+      <div class="mt-2">
+        <p class="block sm:hidden text-red-300">👀 Visible only on mobile (smaller than 640px)</p>
+        <p class="hidden sm:block text-green-300">📱 Visible on screens ≥ 640px</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
