@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tailwind Text Alignment Demo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8 space-y-8">
+
+  <section class="bg-white p-6 rounded shadow space-y-2">
+    <p class="text-left text-blue-700 font-medium">🔵 text-left: This text is aligned to the left.</p>
+    <p class="text-center text-green-700 font-medium">🟢 text-center: This text is aligned to the center.</p>
+    <p class="text-right text-red-700 font-medium">🔴 text-right: This text is aligned to the right.</p>
+    <p class="text-justify text-purple-700 font-medium max-w-xl">
+      🟣 text-justify: This is a justified paragraph. The lines are stretched to align both left and right. It looks cleaner in paragraphs with more words like this one.
+    </p>
+  </section>
+
+  <section class="h-64 bg-white p-4 rounded shadow grid grid-cols-3 gap-4 text-white">
+
+    <div class="bg-blue-500 flex items-start justify-center p-2">
+      <p class="text-sm">⬆️ items-start<br>Top aligned text</p>
+    </div>
+
+    <div class="bg-green-500 flex items-center justify-center p-2">
+      <p class="text-sm">⏺️ items-center<br>Center aligned text</p>
+    </div>
+
+    <div class="bg-red-500 flex items-end justify-center p-2">
+      <p class="text-sm">⬇️ items-end<br>Bottom aligned text</p>
+    </div>
+
+  </section>
+
+</body>
+</html>
