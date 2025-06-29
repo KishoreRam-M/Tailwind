@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Negative Values Study</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-10 space-y-10 font-sans">
+
+  <!-- 🟦 Example 1: Negative Margin -->
+  <div class="bg-white p-6 rounded shadow">
+    <h2 class="text-lg font-bold mb-4">1️⃣ Negative Margin: <code>-mt-4</code></h2>
+    <div class="bg-blue-300 mt-10 p-4">⬇️ Normal Box (mt-10)</div>
+    <div class="bg-blue-500 -mt-4 p-4">⬆️ Pulled Up (using -mt-4)</div>
+  </div>
+
+  <!-- 🟥 Example 2: Negative Position (absolute) -->
+  <div class="bg-white p-6 rounded shadow relative h-32">
+    <h2 class="text-lg font-bold mb-4">2️⃣ Negative Positioning: <code>-top-4 -left-6</code></h2>
+    <div class="absolute -top-4 -left-6 bg-red-400 text-white p-2 rounded shadow">
+      📍 Positioned Top-Left
+    </div>
+    <div class="absolute bottom-4 right-4 bg-gray-300 p-2 rounded">
+      ✅ Original Corner Box
+    </div>
+  </div>
+
+  <!-- 🟩 Example 3: Negative Translate (with transform) -->
+  <div class="bg-white p-6 rounded shadow">
+    <h2 class="text-lg font-bold mb-4">3️⃣ Translate with Negative Values</h2>
+    <div class="transform -translate-x-4 translate-y-2 bg-green-400 text-white p-4 w-fit rounded">
+      🧲 Moved Left & Down using transform
+    </div>
+  </div>
+
+  <!-- 🟨 Example 4: Center with auto + negative margin -->
+  <div class="bg-white p-6 rounded shadow h-32 flex justify-center items-center">
+    <div class="w-48 h-12 bg-yellow-400 text-center p-2 m-auto -mt-4">
+      🎯 Centered with m-auto and -mt-4
+    </div>
+  </div>
+
+</body>
+</html>
